@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-fyp221bmm@y4ch0%5#%xa_2t__^d_2e*jxf632d9_d@0g58q17
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',
-                 'my-to-do-app-django-project.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -70,7 +69,7 @@ TEMPLATES = [
         },
     },
 ]
- 
+
 WSGI_APPLICATION = 'todoapp.wsgi.application'
 
 
