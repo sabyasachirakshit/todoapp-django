@@ -13,6 +13,11 @@ def addTodoView(request):
     new_item.save()
     return HttpResponseRedirect('/todoapp/')
 
+def updateTodoView(request,i):
+    x = request.POST['content']
+    Task.objects.filter(id=i).update(title=x)
+    return HttpResponseRedirect('/todoapp/')
+
 def deleteTodoView(request, i):
     y = Task.objects.get(id= i)
     y.delete()
