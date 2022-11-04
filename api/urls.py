@@ -12,3 +12,4 @@ urlpatterns = [
     # In the below url, we can use POST method to delete task "http://localhost:8000/task-delete/"
     path('task-delete/', views.taskDelete, name="task-delete"),
 ]
+# REST API ADDED
